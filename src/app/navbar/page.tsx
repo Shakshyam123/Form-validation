@@ -1,5 +1,6 @@
 "use Client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -9,7 +10,13 @@ function Page() {
     <div className="">
       <div className="flex text-center justify-between h-12  mt-4 ml-4 mr-4">
         <div>
-          <h1 className="font-extrabold text-4xl">Shakshyam</h1>
+          <Image
+            src="/logorw.png"
+            alt="Logo"
+            width={200}
+            height={200}
+            className="-mt-20"
+          />
         </div>
         <div className="">
           <ul className="flex gap-7 font-semibold">
